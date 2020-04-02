@@ -64,7 +64,6 @@
     </sprites>
     <sprites name="Game Boards">
       <sprites name="Boards">
-        <sprite>sprites\spr_GameBoard_Board_Debug</sprite>
         <sprite>sprites\spr_GameBoard_Debug_BG</sprite>
       </sprites>
       <sprites name="Landing Spaces">
@@ -98,19 +97,103 @@
         <sprite>sprites\spr_SizeTest</sprite>
       </sprites>
       <sprites name="Heads">
-        <sprite>sprites\spr_Head_Naked_Idle</sprite>
-        <sprite>sprites\spr_Head_Punker01_Idle</sprite>
-        <sprite>sprites\spr_Head_Sports01_Idle</sprite>
+        <sprites name="Idle">
+          <sprites name="Naked">
+            <sprite>sprites\spr_Head_Naked_Idle</sprite>
+          </sprites>
+          <sprites name="Punker01">
+            <sprite>sprites\spr_Head_Punker01_Idle</sprite>
+          </sprites>
+          <sprites name="Sports01">
+            <sprite>sprites\spr_Head_Sports01_Idle</sprite>
+          </sprites>
+        </sprites>
+        <sprites name="Running">
+          <sprites name="Naked">
+            <sprite>sprites\spr_Head_Naked_Run_South</sprite>
+            <sprite>sprites\spr_Head_Naked_Run_East</sprite>
+            <sprite>sprites\spr_Head_Naked_Run_North</sprite>
+            <sprite>sprites\spr_Head_Naked_Run_West</sprite>
+          </sprites>
+          <sprites name="Punker01">
+            <sprite>sprites\spr_Head_Punker01_Run_South</sprite>
+            <sprite>sprites\spr_Head_Punker01_Run_East</sprite>
+            <sprite>sprites\spr_Head_Punker01_Run_North</sprite>
+            <sprite>sprites\spr_Head_Punker01_Run_West</sprite>
+          </sprites>
+          <sprites name="Sports01">
+            <sprite>sprites\spr_Head_Sports01_Run_South</sprite>
+            <sprite>sprites\spr_Head_Sports01_Run_East</sprite>
+            <sprite>sprites\spr_Head_Sports01_Run_North</sprite>
+            <sprite>sprites\spr_Head_Sports01_Run_West</sprite>
+          </sprites>
+        </sprites>
       </sprites>
       <sprites name="Torsos">
-        <sprite>sprites\spr_Torso_Naked_Idle</sprite>
-        <sprite>sprites\spr_Torso_Punker01_Idle</sprite>
-        <sprite>sprites\spr_Torso_Sports01_Idle</sprite>
+        <sprites name="Idle">
+          <sprites name="Naked">
+            <sprite>sprites\spr_Torso_Naked_Idle</sprite>
+          </sprites>
+          <sprites name="Punker01">
+            <sprite>sprites\spr_Torso_Punker01_Idle</sprite>
+          </sprites>
+          <sprites name="Sports01">
+            <sprite>sprites\spr_Torso_Sports01_Idle</sprite>
+          </sprites>
+        </sprites>
+        <sprites name="Running">
+          <sprites name="Naked">
+            <sprite>sprites\spr_Torso_Naked_Run_South</sprite>
+            <sprite>sprites\spr_Torso_Naked_Run_East</sprite>
+            <sprite>sprites\spr_Torso_Naked_Run_North</sprite>
+            <sprite>sprites\spr_Torso_Naked_Run_West</sprite>
+          </sprites>
+          <sprites name="Punker01">
+            <sprite>sprites\spr_Torso_Punker01_Run_South</sprite>
+            <sprite>sprites\spr_Torso_Punker01_Run_East</sprite>
+            <sprite>sprites\spr_Torso_Punker01_Run_North</sprite>
+            <sprite>sprites\spr_Torso_Punker01_Run_West</sprite>
+          </sprites>
+          <sprites name="Sports01">
+            <sprite>sprites\spr_Torso_Sports01_Run_South</sprite>
+            <sprite>sprites\spr_Torso_Sports01_Run_East</sprite>
+            <sprite>sprites\spr_Torso_Sports01_Run_North</sprite>
+            <sprite>sprites\spr_Torso_Sports01_Run_West</sprite>
+          </sprites>
+        </sprites>
       </sprites>
       <sprites name="Legs">
-        <sprite>sprites\spr_Legs_Naked_Idle</sprite>
-        <sprite>sprites\spr_Legs_Punker01_Idle</sprite>
-        <sprite>sprites\spr_Legs_Sports01_Idle</sprite>
+        <sprites name="Idle">
+          <sprites name="Naked">
+            <sprite>sprites\spr_Legs_Naked_Idle</sprite>
+          </sprites>
+          <sprites name="Punker01">
+            <sprite>sprites\spr_Legs_Punker01_Idle</sprite>
+          </sprites>
+          <sprites name="Sports01">
+            <sprite>sprites\spr_Legs_Sports01_Idle</sprite>
+          </sprites>
+        </sprites>
+        <sprites name="Running">
+          <sprites name="Naked">
+            <sprite>sprites\spr_Legs_Naked_Run_South</sprite>
+            <sprite>sprites\spr_Legs_Naked_Run_East</sprite>
+            <sprite>sprites\spr_Legs_Naked_Run_North</sprite>
+            <sprite>sprites\spr_Legs_Naked_Run_West</sprite>
+          </sprites>
+          <sprites name="Punker01">
+            <sprite>sprites\spr_Legs_Punker01_Run_South</sprite>
+            <sprite>sprites\spr_Legs_Punker01_Run_East</sprite>
+            <sprite>sprites\spr_Legs_Punker01_Run_North</sprite>
+            <sprite>sprites\spr_Legs_Punker01_Run_West</sprite>
+          </sprites>
+          <sprites name="Sports01">
+            <sprite>sprites\spr_Legs_Sports01_Run_South</sprite>
+            <sprite>sprites\spr_Legs_Sports01_Run_East</sprite>
+            <sprite>sprites\spr_Legs_Sports01_Run_North</sprite>
+            <sprite>sprites\spr_Legs_Sports01_Run_West</sprite>
+          </sprites>
+        </sprites>
       </sprites>
       <sprites name="My Character Menu">
         <sprite>sprites\spr_MyCharacter_Head_Naked</sprite>

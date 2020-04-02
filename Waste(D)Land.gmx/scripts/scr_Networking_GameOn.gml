@@ -9,50 +9,46 @@ switch(b)
     case "Create Players On Map - Server": // For the Server to set all players and their positions
         for(var i = 0; i < ds_list_size(list_PlayersTurn); i ++)
         {
+            var flag = false;
             sp = obj_GameBoard_LandingSpace_Start;
             checkSpace = ds_map_find_value(map_Player_CurrentLandingSpace,ds_list_find_value(list_PlayersTurn,i));
-            if(checkSpace != "") { sp = checkSpace; show_debug_message("SP: "+string(checkSpace)); } else { show_debug_message("SP is undefined. SP: "+string(checkSpace)); }
+            if(checkSpace != "") 
+            { 
+                sp = checkSpace; 
+                flag = true;
+            }
     
             var socket = ds_list_find_value(list_PlayersTurn,i);    
             var playerToFollow = noone;    
-            var xx = sp.x + sp.sprite_width / 2;
-            var yy = sp.y + sp.sprite_height / 2;
-            var offsetX = 40;
-            var offsetY = 80;
-            var playerOffsetY = 10;
             
-            if(i == currentPlayersTurn)
+            if(flag == true)
             {
-                yy = yy-playerOffsetY;
-                playerToFollow = ds_list_find_value(list_PlayersTurn,i);
+                var xx = sp.x + sp.sprite_width / 2;
+                var yy = sp.y + sp.sprite_height / 2;
+                var offsetX = 40;
+                var offsetY = 80;
+                var playerOffsetY = 10;
                 
-                /*with(instance_create(xx,yy-playerOffsetY,obj_PlayerCol))
+                if(i == currentPlayersTurn)
                 {
-                    myPlayerID = ds_list_find_value(list_PlayersTurn,i);
-                    myPlayerName = ds_map_find_value(obj_Client.map_Names, myPlayerID);
-                    camFollowPlayer = self;
-                }*/
-            }
-            else
-            {
-                var o = i % 2;
-                if(o == 0) 
-                { 
-                    offsetY = 0; 
-                } 
-                else 
-                { 
-                    offsetY = 80; 
+                    yy = yy-playerOffsetY;
+                    playerToFollow = ds_list_find_value(list_PlayersTurn,i);
                 }
-                
-                xx = sp.x+(offsetX*i);
-                yy = sp.y+offsetY-playerOffsetY;
-                
-                /*with(instance_create(sp.x+(offsetX*i),sp.y+offsetY-playerOffsetY,obj_PlayerCol))
+                else
                 {
-                    myPlayerID = ds_list_find_value(list_PlayersTurn,i);
-                    myPlayerName = ds_map_find_value(obj_Client.map_Names, myPlayerID);
-                }*/
+                    var o = i % 2;
+                    if(o == 0) 
+                    { 
+                        offsetY = 0; 
+                    } 
+                    else 
+                    { 
+                        offsetY = 80; 
+                    }
+                    
+                    xx = sp.x+(offsetX*i);
+                    yy = sp.y+offsetY-playerOffsetY;
+                }
             }
             
             // Update Player Maps
