@@ -65,9 +65,13 @@
     <sprites name="Game Boards">
       <sprites name="Boards">
         <sprite>sprites\spr_GameBoard_Board_Debug</sprite>
+        <sprite>sprites\spr_GameBoard_Debug_BG</sprite>
       </sprites>
       <sprites name="Landing Spaces">
+        <sprite>sprites\spr_GameBoard_LandingSpace_Start</sprite>
         <sprite>sprites\spr_GameBoard_LandingSpace_Normal</sprite>
+        <sprite>sprites\spr_GameBoard_LandingSpace_Typeface</sprite>
+        <sprite>sprites\spr_GameBoard_LandingSpace_End</sprite>
       </sprites>
       <sprites name="Props">
         <sprites name="Trees">
